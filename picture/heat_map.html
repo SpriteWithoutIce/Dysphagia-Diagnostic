@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="59683cae65674be791e8cc7faabfed5b" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_59683cae65674be791e8cc7faabfed5b = echarts.init(
+            document.getElementById('59683cae65674be791e8cc7faabfed5b'), 'white', {renderer: 'canvas'});
+        var option_59683cae65674be791e8cc7faabfed5b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "heatmap",
+            "coordinateSystem": "cartesian2d",
+            "data": [
+                [
+                    [
+                        "Word1",
+                        "Word1",
+                        100
+                    ],
+                    [
+                        "Word1",
+                        "Word2",
+                        0
+                    ],
+                    [
+                        "Word1",
+                        "Word3",
+                        0
+                    ],
+                    [
+                        "Word1",
+                        "Word4",
+                        0
+                    ]
+                ],
+                [
+                    [
+                        "Word2",
+                        "Word1",
+                        0
+                    ],
+                    [
+                        "Word2",
+                        "Word2",
+                        94
+                    ],
+                    [
+                        "Word2",
+                        "Word3",
+                        0
+                    ],
+                    [
+                        "Word2",
+                        "Word4",
+                        0
+                    ]
+                ],
+                [
+                    [
+                        "Word3",
+                        "Word1",
+                        0
+                    ],
+                    [
+                        "Word3",
+                        "Word2",
+                        0
+                    ],
+                    [
+                        "Word3",
+                        "Word3",
+                        0
+                    ],
+                    [
+                        "Word3",
+                        "Word4",
+                        95
+                    ]
+                ],
+                [
+                    [
+                        "Word4",
+                        "Word1",
+                        0
+                    ],
+                    [
+                        "Word4",
+                        "Word2",
+                        0
+                    ],
+                    [
+                        "Word4",
+                        "Word3",
+                        0
+                    ],
+                    [
+                        "Word4",
+                        "Word4",
+                        100
+                    ]
+                ]
+            ],
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                null
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Word1",
+                "Word2",
+                "Word3",
+                "Word4"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Word1",
+                "Word2",
+                "Word3",
+                "Word4"
+            ]
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "HeatMap Example",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#FFFFFF",
+                "#0000FF"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_59683cae65674be791e8cc7faabfed5b.setOption(option_59683cae65674be791e8cc7faabfed5b);
+    </script>
+</body>
+</html>
