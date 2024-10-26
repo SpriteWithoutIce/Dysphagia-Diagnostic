@@ -1,0 +1,70 @@
+Decision_tree
+Accuracy: 0.8539325842696629
+              precision    recall  f1-score   support
+
+           0       0.75      0.80      0.77        15
+           1       0.89      0.89      0.89         9
+           2       0.62      0.50      0.56        10
+           3       0.77      0.81      0.79        21
+           4       1.00      1.00      1.00        34
+
+    accuracy                           0.85        89
+   macro avg       0.81      0.80      0.80        89
+weighted avg       0.85      0.85      0.85        89
+
+KNN
+Accuracy: 0.8539325842696629
+              precision    recall  f1-score   support
+
+           0       0.71      0.80      0.75        15
+           1       0.89      0.89      0.89         9
+           2       0.83      0.50      0.62        10
+           3       0.75      0.86      0.80        21
+           4       1.00      0.97      0.99        34
+
+    accuracy                           0.85        89
+   macro avg       0.84      0.80      0.81        89
+weighted avg       0.86      0.85      0.85        89
+
+Logistic
+Accuracy: 0.8314606741573034
+              precision    recall  f1-score   support
+
+           0       0.75      0.60      0.67        15
+           1       0.89      0.89      0.89         9
+           2       0.83      0.50      0.62        10
+           3       0.66      0.90      0.76        21
+           4       1.00      0.97      0.99        34
+
+    accuracy                           0.83        89
+   macro avg       0.83      0.77      0.79        89
+weighted avg       0.85      0.83      0.83        89
+
+RandomForest
+Accuracy: 0.8876404494382022
+              precision    recall  f1-score   support
+
+           0       0.82      0.93      0.87        15
+           1       0.89      0.89      0.89         9
+           2       0.86      0.60      0.71        10
+           3       0.78      0.86      0.82        21
+           4       1.00      0.97      0.99        34
+
+    accuracy                           0.89        89
+   macro avg       0.87      0.85      0.85        89
+weighted avg       0.89      0.89      0.89        89
+
+SVM
+Accuracy: 0.8314606741573034
+              precision    recall  f1-score   support
+
+           0       0.75      0.60      0.67        15
+           1       0.89      0.89      0.89         9
+           2       1.00      0.50      0.67        10
+           3       0.63      0.90      0.75        21
+           4       1.00      0.97      0.99        34
+
+    accuracy                           0.83        89
+   macro avg       0.85      0.77      0.79        89
+weighted avg       0.86      0.83      0.83        89
+

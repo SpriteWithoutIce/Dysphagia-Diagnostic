@@ -1,0 +1,3 @@
+trainPath: "../data/train_dataset_eating_2.csv"
+testPath: "../data/test_dataset_eating_2.csv"
+outputPath: "Eating.txt"
