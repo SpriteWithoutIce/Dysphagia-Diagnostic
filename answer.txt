@@ -1,0 +1,88 @@
+SVM
+Accuracy: 0.7032258064516129
+              precision    recall  f1-score   support
+
+           0       1.00      0.92      0.96        24
+           1       0.00      0.00      0.00        34
+           2       0.94      0.76      0.84        42
+           3       0.57      1.00      0.72        55
+
+    accuracy                           0.70       155
+   macro avg       0.63      0.67      0.63       155
+weighted avg       0.61      0.70      0.63       155
+
+Training Time: 0.010722875595092773 seconds
+Memory Used: 0.95703125 MB
+
+
+Decision
+Accuracy: 0.8838709677419355
+              precision    recall  f1-score   support
+
+           0       0.86      1.00      0.92        24
+           1       0.93      0.76      0.84        34
+           2       1.00      0.81      0.89        42
+           3       0.82      0.96      0.88        55
+
+    accuracy                           0.88       155
+   macro avg       0.90      0.88      0.88       155
+weighted avg       0.90      0.88      0.88       155
+
+Training Time: 0.04103899002075195 seconds
+Memory Used: 0.26953125 MB
+
+
+Random Forest
+Accuracy: 0.896774193548387
+              precision    recall  f1-score   support
+
+           0       0.92      0.92      0.92        24
+           1       1.00      0.76      0.87        34
+           2       0.90      0.86      0.88        42
+           3       0.85      1.00      0.92        55
+
+    accuracy                           0.90       155
+   macro avg       0.92      0.88      0.89       155
+weighted avg       0.91      0.90      0.90       155
+
+Training Time: 0.38192296028137207 seconds
+Memory Used: 1.00390625 MB
+
+
+Logistic
+Accuracy: 0.7032258064516129
+                  precision    recall  f1-score   support
+
+           0       1.00      0.92      0.96        24
+           1       0.00      0.00      0.00        34
+           2       0.94      0.76      0.84        42
+           3       0.56      1.00      0.71        55
+
+    accuracy                           0.70       155
+   macro avg       0.62      0.67      0.63       155
+weighted avg       0.61      0.70      0.63       155
+
+Training Time: 0.07855844497680664 seconds
+Memory Used: 7.0546875 MB
+
+
+KNN
+Accuracy: 0.9032258064516129
+              precision    recall  f1-score   support
+
+           0       1.00      0.92      0.96        24
+           1       0.96      0.71      0.81        34
+           2       0.95      0.95      0.95        42
+           3       0.82      0.98      0.89        55
+
+    accuracy                           0.90       155
+   macro avg       0.93      0.89      0.90       155
+weighted avg       0.91      0.90      0.90       155
+
+Training Time: 0.0008432865142822266 seconds
+Memory Used: 0.27734375 MB
+
+
+PatchTST
+Average Training Time per Epoch: 0.05912190437316894 seconds
+Average Memory Used per Epoch: 24.69203125 MB

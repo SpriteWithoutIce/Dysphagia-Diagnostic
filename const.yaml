@@ -1,0 +1,3 @@
+resources:
+  resource_pool: RTX4090-S
+  slots: 1
