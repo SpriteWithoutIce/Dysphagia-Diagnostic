@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="header">
+    <span>Dysphagia Monitoring</span>
+    <image src="/image/jiankangguanli.png" class="icon-header"/>
+  </view>
+  <view class="bottom_boxes">
+    <image src="/image/toujingwaike-tunyankunnan.png" class="top-right-image"/>
+    <view class="left_boxes">
+      <view class="box1">
+        <text class="status-text1">Device Status</text>
+        <text class="status-text2">On</text>
+      </view>
+      <view class="box2" bind:tap="start">
+        <text class="status-text1">Monitoring</text>
+        <text class="status-text3">Begin</text>
+      </view>
+    </view>
+  </view>
+  
+  
+  <view class="container">
+    <view class="box" bind:tap="openBluetoothAdapter">
+      <image class="box-image" src="/image/lanya.png" />
+      <text class="box-text">On</text>
+    </view>
+    <view class="box" bind:tap="createBLEConnection">
+      <image class="box-image" src="/image/jiuxu.png" />
+      <text class="box-text">Ready</text>
+    </view>
+  </view>
+  <view class="answer">
+    <view class="answer-header">Monitoring Results</view>
+    <view class="answer-box">
+      <view style="width: 500rpx;height: 350rpx;">
+        <canvas id="smoothLineCanvas" type="2d" style="width: 500rpx; height: 300rpx; margin-top: 80rpx;"></canvas>
+      </view> 
+      <view style="display: flex;flex-direction: column;margin-right: 20px;">
+        <view class="answer-icon">
+          <image wx:if="{{healthy === 1}}" class="answer-image" src="/image/weixiao.png" />
+          <image wx:else class="answer-image" src="/image/weixiao1.png" />
+          <text wx:if="{{healthy === 1}}" class="answer-text">Healthy</text>
+          <text wx:else class="answer-text2">Healthy</text>
+        </view>
+        <view class="answer-icon">
+          <image wx:if="{{healthy === 1}}" class="answer-image" src="/image/emoticon-dead1.png" />
+          <image wx:else class="answer-image" src="/image/emoticon-dead.png" />
+          <text wx:if="{{healthy === 1}}" class="answer-text" style="color: #bfbfbf;">Unhealthy</text>
+          <text wx:else class="answer-text" style="color: dimgray;">Unhealthy</text>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</scroll-view>

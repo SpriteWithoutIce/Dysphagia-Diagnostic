@@ -1,0 +1,21 @@
+<!--pages/blue/blue.wxml-->
+<!-- bluetooth-comp/index.wxml -->
+<view style="margin: 26rpx">
+  <button bindtap="createBLEConnection" style="margin-top: 200rpx;">连接设备</button>
+  <button wx:if="{{!connected}}" bindtap="openBluetoothAdapter" style="margin-top: 20rpx;">开始扫描</button>
+  <button wx:else bindtap="closeBLEConnection">断开连接 - {{name}}</button>
+
+  <view class="devices_summary">已发现 {{devices.length}} 个外围设备：</view>
+  <view
+    wx:for="{{devices}}"
+    wx:key="index"
+    data-device-id="{{item.deviceId}}"
+    data-name="{{item.name || item.localName}}"
+    bindtap="createBLEConnection"
+    class="device_item"
+    hover-class="device_item_hover">
+    <view style="font-size: 16px; color: #333">{{item.name}}</view>
+    <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm</view>
+    <view style="font-size: 10px">UUID: {{item.deviceId}}</view>
+  </view>
+</view>
