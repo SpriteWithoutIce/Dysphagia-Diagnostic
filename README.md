@@ -15,6 +15,7 @@
 * templates：网页（作废）
 * training：训练集迭代实验
 * web：网页
+* mini-program：小程序
 
 ## 模型训练
 
